@@ -65,11 +65,8 @@ int main()
 	else {
 		userAgilityH = 3;
 	}
-
-	//Note to self: please remove debug later.
-	printf("agi:%d\tstr:%d\n", userAgilityH, userStrengthH);
 	
-	//Potion color choicec
+	//Potion color choice
 	printf("%s is shopping. What color potion do you purchase?\n", userName);
 	printf("Your options are:\n");
 	printf("1. Red\n");
@@ -115,12 +112,15 @@ int main()
 	//Asks Choice 1
 	printf("1. Hide under the table.\n");
 	printf("2. Inspect the dragon.\n");
+	
 	//If user agility is higher than 1, a high agility question will appear.
 	if ((userAgilityH == 2) || (userAgilityH == 3)){printf("3.[High Agility] Run towards the door.\n");}
 	else { printf("3. Attempt to run away.\n"); } //if not, this question will appear
+	
 	//Similarly if user strength is 3, this would appear
 	if(userStrengthH == 3) {printf("4.[High Strength] Kill the dragon.\n");}
 	else {printf("4. Attempt to kill the dragon.\n");} //or else this will
+	
 	printf("================================\n");
 	printf("Choose an option: ");
 	scanf("%d", &choice1); 
@@ -229,3 +229,4 @@ int main()
 	
 return 0;	
 }
+/*This game was ended abruptly becasue I did not want to work on it anymore. */
